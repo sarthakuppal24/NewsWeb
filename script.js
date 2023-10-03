@@ -3,14 +3,6 @@ const URL = "https://newsapi.org/v2/everything?q=";
 // Whenever the window will load fetchApi will work
 window.addEventListener("load",()=> fetchApi("earthquake"));
 
-// An asynchronous function 
-async function fetchApi(query){
-    let result = await fetch(`${URL}${query}&apiKey=${API_KEY}`);
-    // result is recvd in raw format
-    // now convert into json format
-    let data = await result.json(); 
-    bindData(data.articles);
-}
 
 // Binding data and making cards
 function bindData(articles){
@@ -29,6 +21,17 @@ function bindData(articles){
         cardscontainer.appendChild(cardclone);
     });
 }
+
+// An asynchronous function 
+async function fetchApi(query){
+    let result = await fetch(`${URL}${query}&apiKey=${API_KEY}`);
+    // result is recvd in raw format
+    // now convert into json format
+    let data = await result.json(); 
+    bindData(data.articles);
+}
+
+
 
 // Getting the data in card
 function getDatatocard(article,cardclone){
