@@ -15,14 +15,14 @@
             </div>
             <div class="nav-links">
                 <ul>
-                    <li>Cricket</li>
-                    <li>Politics</li>
-                    <li>Finance</li>
+                    <li id="cricket"  class="navl" onclick="clicknavlist('cricket')">Cricket</li>
+                    <li id="politics"  class="navl" onclick="clicknavlist('politics')">Politics</li>
+                    <li id="finance" class="navl"  onclick="clicknavlist('finance')">Finance</li>
                 </ul>
             </div>
             <div class="nav-searchbar">
                 <input type="text" name="search" id="navsearch" placeholder="e.g. Stocks">
-                <button>Search</button>
+                <button class="navbtn">Search</button>
             </div>
         </div>
 
@@ -30,14 +30,14 @@
             
         </div>
 
-        <template>
+        <template class="tempclass">
             <div class="card">
-                <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmV3c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                <div class="card-img" >
+                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmV3c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="" class="cimg">
                 </div>
-                <h3>This is the Title</h3>
-                <h5>End Gadget 25/09/2023</h5>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo rem tenetur expedita ab deleniti accusamus, nobis vero. Veniam, reiciendis fugit?</p>
+                <h3 class="cttle">This is the Title</h3>
+                <h5 class="desc">End Gadget 25/09/2023</h5>
+                <p class="source">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo rem tenetur expedita ab deleniti accusamus, nobis vero. Veniam, reiciendis fugit?</p>
             </div>
         </template>
     </div>

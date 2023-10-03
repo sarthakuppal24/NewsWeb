@@ -22,7 +22,7 @@ a,li,ul{
 .nav{
     width: 100%;
     height: 80px;
-    background-color: #c7103e;
+    background-color: #c02020;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,6 +51,10 @@ a,li,ul{
 
 .nav-links ul li:hover{
     color: rgb(114, 142, 243);
+}
+
+.navl.active{
+    color: yellow;
 }
 
 .nav-searchbar{
@@ -104,6 +108,15 @@ a,li,ul{
     gap: 8px;
     border-radius: 4px;
     overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(0, 0, 255, 0.142);
+    transition: all linear 0.3s;
+}
+
+.card.card:hover{
+    box-shadow: 0 0 12px rgba(0, 0, 255, 0.247);
+    transform:scale(1.1);
+
 }
 
 
